@@ -1,0 +1,11 @@
+{
+	"name":"Notes++",
+	"version": "1.0",
+	"description": "simple note taking extension",
+	"manifest_version": 2,
+	"permissions": ["storage"],
+	"browser_action": {
+		"default_title": "Notes",
+		"default_popup": "popup.html"
+	}
+}
