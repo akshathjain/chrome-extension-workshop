@@ -1,0 +1,12 @@
+{
+	"name":"ImageManipulator",
+	"description":"A tribute to CMU President Farnam Jahanian!",
+	"version":"1.0",
+	"manifest_version":2,
+	"permissions":[
+		"activeTab"
+	],
+	"browser_action":{
+		"default_popup":"popup.html"
+	}
+}
