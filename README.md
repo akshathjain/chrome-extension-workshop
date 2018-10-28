@@ -10,7 +10,7 @@ This talk is geared towards beginners. No prior knowledge of Chrome extensions i
 Bring a laptop with [Chrome](https://www.google.com/chrome/) and your text editor of choice ([Sublime](https://www.sublimetext.com/download), [VS Code](https://code.visualstudio.com/download), [Atom](https://atom.io/), [Vim](https://www.vim.org/download.php), [Emacs](https://www.gnu.oTrg/software/emacs/download.html), etc) installed.
 
 ## Resources
-
+Lecture Materials
 - [Slides](https://github.com/akshathjain/Chrome-Extension-WDW)
 - [Code](https://github.com/akshathjain/Chrome-Extension-WDW)
 - [Lab](https://github.com/akshathjain/Chrome-Extension-WDW)
