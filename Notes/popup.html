@@ -3,14 +3,32 @@
 <head>
 	<title>Notes++</title>
 	<script src="popup.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
-	<form>
-		<input id="note-entry" type="Text" name="notes">
-		<input id="submit-note" type="Submit">
-	</form>
+	<!-- header -->
+	<div class="navbar">
+		<div class="navbar-child">
+			<table>
+				<tr>
+					<td><p class="title">Notes++</p></td>
+					<td style="padding-left: 85px;"><i id="new-note-button" class="material-icons new-note-button">add</i></td>
+				</tr>
+			</table>
+		</div>
+	</div>
 	<br>
-	<br>
-	<p id="note-holder"></p>
+	<div id="notes-holder">
+		<div>
+			<div class="divider"></div>
+			<textarea class="input-field"></textarea>
+		</div>
+		<div style="display: none" id="textarea-template">
+			<div class="divider"></div>
+			<textarea class="input-field"></textarea>
+		</div>
+	</div>
 </body>
 </html>

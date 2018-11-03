@@ -5,25 +5,42 @@ Purpose: notes++ logic
 */
 
 //important vars
-var newNoteField;
-var submitNoteButton;
 var notesHolder;
 
 function main(){
 	console.log('here');
 	newNoteField = document.getElementById("note-entry");
-	submitNoteButton = document.getElementById("submit-note");
-	notesHolder = document.getElementById("note-holder");
+	notesHolder = document.getElementById("notes-holder");
 
 	setupSubmitButton();
+	setupTextAreaResizing();
 }
 
 function setupSubmitButton(){
-	submitNoteButton.addEventListener("click", function(){
-		console.log('here');
-		notesHolder.innerHtml += newNoteField.value;
+	document.getElementById('new-note-button').addEventListener("click", function(){
+		notesHolder.insertBefore(createInput(), notesHolder.firstChild);
+		setupTextAreaResizing();
 	});
 }	
+
+function setupTextAreaResizing(){
+	//get all the textareas
+	var textAreas = document.getElementsByTagName("textarea");
+	//console.log(tas);
+	for(var i = 0; i < textAreas.length; i++){
+		textAreas[i].oninput = function(){
+			this.style.height = "25px"; //default height
+			this.style.height = this.scrollHeight + "px";
+		};
+	}
+}
+
+function createInput(){
+	var newArea = document.getElementById('textarea-template').cloneNode(true);
+	newArea.id = "";
+	newArea.style.display = "inline";
+	return newArea;
+}
 
 document.addEventListener('DOMContentLoaded', function(){
 	main();
