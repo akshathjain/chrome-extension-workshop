@@ -13,3 +13,7 @@ farnamImageUrls = [
 var images = document.getElementsByTagName("img"); //this is an array of images
 for(var i = 0; i < images.length; i++)
 	images[i].src = farnamImageUrls[Math.floor((Math.random() * farnamImageUrls.length))];
+
+({
+	"numImagesChanged":images.length
+})
