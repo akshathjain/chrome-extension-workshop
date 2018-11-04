@@ -5,7 +5,11 @@
 	"manifest_version": 2,
 	"permissions": ["storage"],
 	"browser_action": {
-		"default_title": "Notes",
+		"default_title": "Notes++",
 		"default_popup": "popup.html"
+	},
+	"background":{
+		"scripts":["backgroundScripts.js"],
+		"persistent":true
 	}
 }
