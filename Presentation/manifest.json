@@ -1,0 +1,19 @@
+{
+	"name":"Image Manipulator",
+	"description":"Change webpage images",
+	"version":"1.0",
+	"manifest_version":2,
+	"permissions":[
+		"activeTab",
+		"storage"
+	],
+	"browser_action":{
+		"default_popup":"popup.html"
+	},
+	"background":{
+		"scripts":[
+			"backgroundScripts.js"
+		],
+		"persistent":true
+	}
+}
